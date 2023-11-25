@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1c1e22; /* Adjusted background color for better contrast */
+  color: #f1f1f1; /* Light grey text for better readability */
+}
+
+.organization-chart {
+  font-family: Arial, sans-serif;
+}
+
+.department {
+  background-color: #2a2d34;
+  color: #cfd2d6; /* Lighter grey for department background */
+}
+
+.node {
+  background-color: #32353d;
+  color: #cfd2d6;
+}
+
+.manager-info {
+  background-color: #3a3e47;
+  color: #cfd2d6;
+}
+
+.node-title {
+  font-weight: bold;
+  color: #ffffff; /* White text for titles to stand out */
+}
+
+.node-children {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+/* Style adjustments for interactive elements */
+.department h2 {
+  cursor: pointer;
+  background-color: #2a2d34;
+  color: #ffffff; /* White text for interactive headers */
+  padding: 5px 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.department h2:hover {
+  background-color: #1c1e22; /* Darker background on hover for effect */
+}
+
+.node-info {
+  background-color: #f9f9f9;
+  color: #333; /* Dark text on light background for node info */
+  padding: 5px;
+  margin-top: 5px;
+  border-left: 3px solid #2196F3; /* Blue bar for employees */
+}
+
+.search-highlight {
+  background-color: yellow; /* Highlight color for search matches */
+}
+
+/* Additional styles for search bar for consistency */
+.search-bar {
+  color: #ffffff; /* White text for search bar */
+  background-color: #2a2d34; /* Matching the department background */
+  border: none;
+  padding: 8px;
+  margin: 10px 0;
+}

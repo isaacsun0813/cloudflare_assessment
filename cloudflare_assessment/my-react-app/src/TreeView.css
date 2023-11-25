@@ -1,0 +1,30 @@
+.treeViewContainer {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .treeNode {
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .treeNode.hasChild > button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .treeNode .active {
+    font-weight: bold;
+  }
+  
+  .nested {
+    list-style: none;
+    margin-left: 20px;
+    display: none;
+  }
+  
+  .nested.active {
+    display: block;
+  }
+  
