@@ -1,0 +1,16 @@
+name = "cloudflare_assessment"
+main = "src/index.js"  # This should point to your Worker script
+compatibility_date = "2023-11-10"
+
+kv_namespaces = [
+  { binding = "ASSETS", id = "44f4ee517dc345c890d07cb3eb2413c9" }  # For static assets
+]
+
+# Workers Sites Configuration
+[site]
+bucket = "react-app/build"  # Make sure this path is correct relative to your wrangler.toml file
+
+[env.production]
+kv_namespaces = [
+  { binding = "assessment-data", id = "257401f30740484cbf18c4c48cdfb46f" }  # For dynamic data storage
+]
